@@ -1,0 +1,198 @@
+
+header {
+    display: flex;
+    background-image: url(../IMG/comercioonline.jpg);
+    background-size: cover;
+    background-position: center;
+  width: 100vw;
+    height: 70vh;
+    transition: background-image 2s;
+}
+
+h1 {
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+	padding: 35px;
+	font-size: 50pt;
+    text-align: center;
+	align-items: center;
+    color: white;
+}
+
+
+
+body {
+     display: block;
+    margin: 0;
+}
+
+#menu {
+	display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 12vh;
+    flex-flow: row wrap;
+    color: white;
+    transition: background-color 3s;
+}
+
+#dia {
+    width: 40%;
+    height: 40px;
+    font-family: 'futura';
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 1s;
+}
+
+#noche {
+    width: 40%;
+    height: 40px;
+    font-family: 'futura';
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 1s;
+}
+
+#noche:hover {
+    color: red;
+}
+
+#fons {
+	 background-color: white;
+    transition: background-color 2s;
+}
+
+#ncarrito {
+    font-family: 'futura';
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.carro {
+    width: 65px;
+    margin: auto;
+    display: block;
+}
+
+#products {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.divprod {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    border-radius: 20px;
+    transition: background-color 1s;
+    background-color: whitesmoke;
+}
+
+
+.imgprod {
+    width: 60%;
+    margin: 10px;
+}
+
+.txtprod {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+}
+
+.nombre {
+    align-self: flex-start;
+    font-size: 30px;
+    font-family: 'futura';
+    margin: 20px;
+}
+
+.precio {
+    font-size: 20px;
+    align-self: flex-end;
+    font-family: 'futura';
+    margin: 50px;
+}
+
+#sidebar {
+    background-color: darkgray;
+}
+
+.footer {
+     display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+}
+
+#footertext {
+       text-align: center;
+    padding: 25px;
+    margin: 0px;
+    color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+}
+
+@media screen and (max-width: 800px) {
+    #dia{
+        font-size: 16pt;
+    }
+    
+    #noche {
+        font-size: 16pt;
+    }
+    
+ #sidebar {
+        flex-direction: row;
+        width: 100vh;
+        height: 20%;
+    }
+    
+#sidebar {
+        flex-direction: row;
+        width: 100vh;
+        height: 20%;
+    }
+
+    #products {
+        width: 100vh;
+    }
+
+    .divprod {
+        width: 70%;
+    }
+
+    .nombre {
+        font-size: 15px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+
+    #ncarrito {
+        font-size: 15px;
+    }
+
+    .carro {
+        width: 50px;
+    }
+
+}
